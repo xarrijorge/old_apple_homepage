@@ -54,32 +54,54 @@ nav{
 
 input{
   position: relative;
-  width: 10vw;
+  width: 8vw;
   height: 23px;
-  margin: 0 10px;
-  border-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
   background: transparent;
-  box-shadow: 1px 1px #404020 inset;
+  box-shadow: 0 1px #404020 inset;
   border: 1px solid #404020; 
+  border-left: 0 transparent;
+  padding-left: 5px;
   transition: all 0.3s ease;
 }
-.input-field:hover{
-  background-color: transparent;
+/* .input-field:hover{ */
+/*   background-color: transparent; */
+/* } */
+/* .input-field input:focus { */
+/*   width: 15vw; */
+/*   background-color: #fff; */
+/* } */
+
+label{
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0 10px;
 }
-.input-field input:focus {
-  width: 15vw;
-  background-color: #fff;
+label input:focus{
+  background-color: #e6e6e6;
+  width: 12vw;
+  outline: none;
+}
+label div{
+  width: 25px;
+  height: 23px;
+  background-color: transparent;
+  border: 1px solid #404020; 
+  box-shadow: 1px 1px #404020 inset;
+  border-right: 0;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  display: flex;
+  align-items: center;
+  padding-left: 5px;
+}
+.fa-search{
+  font-size: 0.875em; 
 }
 
-.fa-search{
-  position: absolute;
-  font-size: 0.875em;
-  top: 13px;
-  margin-left: 15px;
-}
-input:focus~.fa-search{
-  color: #909090;
-}
 ul li{
   display: inline-block;
   list-style-type: none;
